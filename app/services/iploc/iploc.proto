@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package iploc;
+
+message IpAddr {
+    string ip = 1;
+}
+
+message IpResult {
+    string a = 1;
+    string b = 2;
+}
+
+
+service IpLoc {
+    rpc Find(IpAddr) returns(IpResult);
+}
