@@ -1,3 +1,14 @@
 Name: api-api
 Host: 0.0.0.0
 Port: 8888
+
+#dq依赖Beanstalks、redis ，Beanstalks配置、redis配置
+DqConf:
+  Beanstalks:
+    - Endpoint: 127.0.0.1:11300
+      Tube: tube1
+    - Endpoint: 127.0.0.1:11301
+      Tube: tube2
+  Redis:
+    Host: 127.0.0.1:6379
+    Type: node
