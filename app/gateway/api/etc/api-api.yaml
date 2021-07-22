@@ -21,3 +21,18 @@ Nsqd:
     - 127.0.0.1:4150
   Topic: ""
   Channel: ""
+
+ElasticSearch:
+  Username: ""
+  Password: ""
+  Hosts:
+    - http://127.0.0.1:9200
+
+RedisConf:
+  Host: 127.0.0.1:6379
+  Pass: ~
+
+ConsulConf:
+  Address: "127.0.0.1:8500"
+  Token: "xxx"
+  Datacenter: "xxx"

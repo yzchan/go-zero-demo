@@ -3,18 +3,18 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/service"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
 
-	"demo/app/mq/message/internal/config"
-	"demo/app/mq/message/internal/handler"
-	"demo/app/mq/message/internal/svc"
+	"demo/app/queue/message/internal/config"
+	"demo/app/queue/message/internal/handler"
+	"demo/app/queue/message/internal/svc"
 
 	"github.com/tal-tech/go-zero/core/conf"
+	"github.com/tal-tech/go-zero/core/logx"
+	"github.com/tal-tech/go-zero/core/service"
 )
 
 var configFile = flag.String("f", "etc/message-api.yaml", "the config file")

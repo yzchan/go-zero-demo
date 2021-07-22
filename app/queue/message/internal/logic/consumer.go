@@ -2,7 +2,7 @@ package logic
 
 import (
 	"context"
-	"demo/app/mq/message/internal/svc"
+	"demo/app/queue/message/internal/svc"
 	"github.com/tal-tech/go-zero/core/logx"
 	"github.com/tal-tech/go-zero/core/threading"
 )

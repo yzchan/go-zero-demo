@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package phoneloc;
+
+message PhoneLocReq {
+  string phone = 1;
+}
+
+message PhoneLocResp {
+  string prov = 1;
+  int32 prov_code = 2;
+  string city = 3;
+  int32 city_code = 4;
+  string isp = 5;
+  string postcode = 6;
+  string tel = 7;
+}
+
+service PhoneLoc {
+  rpc Find(PhoneLocReq) returns(PhoneLocResp);
+}

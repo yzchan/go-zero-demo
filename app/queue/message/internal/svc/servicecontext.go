@@ -1,7 +1,7 @@
 package svc
 
 import (
-	"demo/app/mq/message/internal/config"
+	"demo/app/queue/message/internal/config"
 	"github.com/tal-tech/go-queue/dq"
 )
 
