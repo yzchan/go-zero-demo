@@ -12,3 +12,12 @@ DqConf:
   Redis:
     Host: 127.0.0.1:6379
     Type: node
+
+Nsqlookupd:
+  Hosts:
+    - 127.0.0.1:4161
+Nsqd:
+  Hosts:
+    - 127.0.0.1:4150
+  Topic: ""
+  Channel: ""
