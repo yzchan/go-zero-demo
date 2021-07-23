@@ -1,7 +1,7 @@
 package config
 
 import (
-	"demo/app/common"
+	"demo/lib"
 	"github.com/tal-tech/go-queue/dq"
 	"github.com/tal-tech/go-zero/core/stores/redis"
 	"github.com/tal-tech/go-zero/rest"
@@ -11,8 +11,8 @@ type Config struct {
 	rest.RestConf
 	DqConf        dq.DqConf
 	RedisConf     *redis.RedisConf
-	ConsulConf    *common.ConsulConf
-	ElasticSearch *common.ElasticSearch
+	ConsulConf    *lib.ConsulConf
+	ElasticSearch *lib.ElasticSearch
 
 	Nsqlookupd struct {
 		Hosts []string

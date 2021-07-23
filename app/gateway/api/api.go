@@ -1,15 +1,16 @@
 package main
 
 import (
-	"demo/app/common/errorx"
-	"demo/app/gateway/api/internal/nsq"
 	"flag"
 	"fmt"
+	"github.com/tal-tech/go-zero/core/logx"
 	"net/http"
 
 	"demo/app/gateway/api/internal/config"
 	"demo/app/gateway/api/internal/handler"
+	"demo/app/gateway/api/internal/nsq"
 	"demo/app/gateway/api/internal/svc"
+	"demo/lib/errorx"
 
 	"github.com/tal-tech/go-zero/core/conf"
 	"github.com/tal-tech/go-zero/rest"
@@ -27,6 +28,14 @@ func main() {
 	ctx := svc.NewServiceContext(c)
 	server := rest.MustNewServer(c.RestConf)
 	defer server.Stop()
+
+	// 全局中间件
+	server.Use(func(next http.HandlerFunc) http.HandlerFunc {
+		return func(w http.ResponseWriter, r *http.Request) {
+			logx.Info("global middleware")
+			next(w, r)
+		}
+	})
 
 	handler.RegisterHandlers(server, ctx)
 

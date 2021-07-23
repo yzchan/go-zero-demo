@@ -8,7 +8,7 @@ import (
 type Worker struct {
 }
 
-func NewFetchHandler() *Worker {
+func NewWorkerHandler() *Worker {
 	return &Worker{}
 }
 

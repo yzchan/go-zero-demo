@@ -11,12 +11,16 @@ import (
 
 func RegisterHandlers(engine *rest.Server, serverCtx *svc.ServiceContext) {
 	engine.AddRoutes(
-		[]rest.Route{
-			{
-				Method:  http.MethodGet,
-				Path:    "/from/:name",
-				Handler: ApiHandler(serverCtx),
-			},
-		},
+		rest.WithMiddlewares(
+			[]rest.Middleware{serverCtx.Example},
+			[]rest.Route{
+				{
+					Method:  http.MethodGet,
+					Path:    "/from/:name",
+					Handler: ApiHandler(serverCtx),
+				},
+			}...,
+		),
+		rest.WithJwt(serverCtx.Config.Auth.AccessSecret),
 	)
 }

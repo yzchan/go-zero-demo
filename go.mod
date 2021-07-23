@@ -8,6 +8,7 @@ require (
 	github.com/golang/protobuf v1.5.2
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/nsqio/go-nsq v1.0.8
+	github.com/olivere/elastic/v7 v7.0.26 // indirect
 	github.com/prometheus/procfs v0.7.0 // indirect
 	github.com/tal-tech/go-queue v1.0.6
 	github.com/tal-tech/go-zero v1.1.8

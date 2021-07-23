@@ -19,7 +19,7 @@ func InitConsumer(ctx *svc.ServiceContext) (err error) {
 	}
 	consumer.SetLoggerLevel(nsq.LogLevelError)
 
-	handler := handlers.NewFetchHandler()
+	handler := handlers.NewWorkerHandler()
 	consumer.AddConcurrentHandlers(handler, 10)
 	if err = consumer.ConnectToNSQLookupds(ctx.Config.Nsqlookupd.Hosts); err != nil {
 		return
