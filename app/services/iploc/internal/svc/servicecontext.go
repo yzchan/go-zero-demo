@@ -2,16 +2,16 @@ package svc
 
 import (
 	"demo/app/services/iploc/internal/config"
-	iplocate "github.com/yzchan/ip-locate"
+	iploc "github.com/yzchan/iploc"
 )
 
 type ServiceContext struct {
 	Config config.Config
-	IpLoc  *iplocate.QQWryParser
+	IpLoc  *iploc.QQWryParser
 }
 
 func NewServiceContext(c config.Config) *ServiceContext {
-	parser, err := iplocate.NewQQWryParser(c.QQWryPath)
+	parser, err := iploc.NewQQWryParser(c.QQWryPath)
 	if err != nil {
 		panic(err)
 	}

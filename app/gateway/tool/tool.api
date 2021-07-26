@@ -1,0 +1,32 @@
+syntax = "v1"
+
+info(
+	title: "工具类查询接口"
+	desc: "工具类查询接口：ip归属地查询、手机归属地查询、行政区划代码查询"
+	author: "chenyuzou"
+	email: "chenyuzou@qq.com"
+)
+
+type IpReq {
+	Ip string `path:"name"`
+}
+type PhoneReq {
+	Phone string `path:"name"`
+}
+
+type CommonResp {
+	Code int         `json:"code"`
+	Msg  string      `json:"msg,omitempty"`
+	Data interface{} `json:"data,omitempty"`
+}
+
+@server(
+	middleware: Example // 路由中间件声明
+)
+service tool-api {
+	@handler IpLoc
+	get /iploc/:ipaddr (IpReq) returns (CommonResp)
+	
+	@handler PhoneLoc
+	get /phoneloc/:phone (PhoneReq) returns (CommonResp)
+}
