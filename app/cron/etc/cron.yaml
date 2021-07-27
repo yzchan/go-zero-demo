@@ -1,0 +1,7 @@
+Name: app-cron
+Debug: false
+
+RedisConf:
+  Host: 127.0.0.1:6379
+  Type: Node
+  Pass: ~
