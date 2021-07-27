@@ -3,6 +3,7 @@ module demo
 go 1.16
 
 require (
+	github.com/cpuguy83/go-md2man/v2 v2.0.1 // indirect
 	github.com/go-redis/redis v6.15.9+incompatible // indirect
 	github.com/golang/mock v1.4.4 // indirect
 	github.com/golang/protobuf v1.5.2
@@ -13,6 +14,7 @@ require (
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/tal-tech/go-queue v1.0.6
 	github.com/tal-tech/go-zero v1.1.8
+	github.com/urfave/cli/v2 v2.3.0
 	github.com/yzchan/iploc v0.0.0-20210726080634-dfe0f96778f3
 	go.uber.org/automaxprocs v1.4.0 // indirect
 	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
