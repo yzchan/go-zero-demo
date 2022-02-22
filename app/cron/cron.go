@@ -9,7 +9,7 @@ import (
 	"demo/app/cron/internal/svc"
 
 	"github.com/robfig/cron/v3"
-	"github.com/tal-tech/go-zero/core/conf"
+	"github.com/zeromicro/go-zero/core/conf"
 )
 
 var configFile = flag.String("f", "etc/internal-api.yaml", "the config file")

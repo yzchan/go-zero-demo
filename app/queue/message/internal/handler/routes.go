@@ -4,7 +4,7 @@ import (
 	"context"
 	"demo/app/queue/message/internal/logic"
 	"demo/app/queue/message/internal/svc"
-	"github.com/tal-tech/go-zero/core/service"
+	"github.com/zeromicro/go-zero/core/service"
 )
 
 func RegisterDq(serverCtx *svc.ServiceContext, group *service.ServiceGroup) {

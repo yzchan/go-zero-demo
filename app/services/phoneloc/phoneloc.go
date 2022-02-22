@@ -9,8 +9,8 @@ import (
 	"demo/app/services/phoneloc/internal/svc"
 	"demo/app/services/phoneloc/phoneloc"
 
-	"github.com/tal-tech/go-zero/core/conf"
-	"github.com/tal-tech/go-zero/zrpc"
+	"github.com/zeromicro/go-zero/core/conf"
+	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"
 )
 

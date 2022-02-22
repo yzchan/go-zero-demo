@@ -7,7 +7,7 @@ import (
 	"demo/app/gateway/tool/internal/svc"
 	"demo/app/gateway/tool/internal/types"
 
-	"github.com/tal-tech/go-zero/rest/httpx"
+	"github.com/zeromicro/go-zero/rest/httpx"
 )
 
 func PhoneLocHandler(ctx *svc.ServiceContext) http.HandlerFunc {

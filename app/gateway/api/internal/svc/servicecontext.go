@@ -3,11 +3,11 @@ package svc
 import (
 	"demo/app/gateway/api/internal/config"
 	"demo/app/gateway/api/internal/middleware"
-	"github.com/tal-tech/go-zero/rest"
+	"github.com/zeromicro/go-zero/rest"
 
 	"github.com/olivere/elastic/v7"
-	"github.com/tal-tech/go-queue/dq"
-	"github.com/tal-tech/go-zero/core/stores/redis"
+	"github.com/zeromicro/go-queue/dq"
+	"github.com/zeromicro/go-zero/core/stores/redis"
 )
 
 type ServiceContext struct {

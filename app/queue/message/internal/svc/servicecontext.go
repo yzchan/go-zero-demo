@@ -2,7 +2,7 @@ package svc
 
 import (
 	"demo/app/queue/message/internal/config"
-	"github.com/tal-tech/go-queue/dq"
+	"github.com/zeromicro/go-queue/dq"
 )
 
 type ServiceContext struct {

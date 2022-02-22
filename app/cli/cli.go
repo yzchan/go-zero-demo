@@ -8,7 +8,7 @@ import (
 	"demo/app/cli/internal/handler"
 	"demo/app/cli/internal/svc"
 
-	"github.com/tal-tech/go-zero/core/conf"
+	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/urfave/cli/v2"
 )
 

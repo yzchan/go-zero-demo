@@ -4,8 +4,8 @@ import (
 	"demo/app/gateway/tool/internal/config"
 	"demo/app/gateway/tool/internal/middleware"
 	"demo/app/services/iploc/iplocclient"
-	"github.com/tal-tech/go-zero/rest"
-	"github.com/tal-tech/go-zero/zrpc"
+	"github.com/zeromicro/go-zero/rest"
+	"github.com/zeromicro/go-zero/zrpc"
 )
 
 type ServiceContext struct {

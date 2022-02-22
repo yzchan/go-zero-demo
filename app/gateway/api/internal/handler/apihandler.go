@@ -7,7 +7,7 @@ import (
 	"demo/app/gateway/api/internal/svc"
 	"demo/app/gateway/api/internal/types"
 
-	"github.com/tal-tech/go-zero/rest/httpx"
+	"github.com/zeromicro/go-zero/rest/httpx"
 )
 
 func ApiHandler(ctx *svc.ServiceContext) http.HandlerFunc {
