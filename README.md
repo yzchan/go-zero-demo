@@ -7,4 +7,4 @@
 - login & jwt
 - mysql model
 - bloom
-- 限流 period_limit & token_limit
+- 限流
